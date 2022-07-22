@@ -44,6 +44,7 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+				label = "Default";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |LA(S)|  D   | LC(F)|  G   |                                          |  H   |LC(J)  |  K    |RA(L) |   ;   |   '  |
@@ -51,8 +52,8 @@
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &mt LA(S) &kp D &mt LC(F) &kp G                                &kp H &mt RC(J)  &kp K  &mt RA(L) &kp SEMI &kp SQT
-	&mt LS(LPAR) &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RS(RPAR)
+	&kp TAB   &kp A &mt LALT S &kp D &mt LCTRL F &kp G                                &kp H &mt RCTRL J  &kp K  &mt RALT L &kp SEMI &kp SQT
+	&mt LSHIFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHIFT RPAR
 	                 &kp LGUI &mo THREE &mo TWO &kp BSPC &kp DEL        &kp RET  &lt ONE SPACE  &mo TWO &mo THREE &kp RGUI
 			>;
 			
@@ -60,6 +61,7 @@
 		};
 
 		layer_1 {
+				label = "One";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -  |
 // |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +  |
@@ -76,6 +78,7 @@
 		};
 
 		layer_2 {
+				label = "Two";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                                          |      |       |  UP   |      |       |      |
 // |       |     |     |      |      |      |                                          |      | LEFT  |  DOWN |RIGHT |       |      |
@@ -83,7 +86,7 @@
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
 			bindings = <
 	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                              &kp Y &kp U  &kp UP     &kp O   &kp P    &trans
-	&trans   &trans &trans &trans &trans &mt LA(TAB)                               &kp H &kp LEFT  &kp DOWN     &kp RIGHT   &kp SEMI &trans
+	&trans   &trans &trans &trans &trans &trans                               &kp H &kp LEFT  &kp DOWN     &kp RIGHT   &kp SEMI &trans
 	&trans &trans &trans &trans &trans &trans &trans &tdbt            &trans &trans &trans &trans &trans &trans &trans &trans
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
@@ -92,6 +95,7 @@
 		};
 
 		layer_3 {
+				label = "Three";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                                          | F7   |   F8  |   F9  |  F10 |   F11 | F12  |
 // |       |     |     |      |      |      |                                          |      |       |       |      |       |      |
