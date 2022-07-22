@@ -55,23 +55,23 @@
 	&mt LS(LPAR) &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RS(RPAR)
 	                 &kp LGUI &mo THREE &mo TWO &kp BSPC &kp DEL        &kp RET  &lt ONE SPACE  &mo TWO &mo THREE &kp RGUI
 			>;
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
+			
 			
 		};
 
 		layer_1 {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -  |
-// |       |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |      |
-// |       |  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |      |
+// |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +  |
+// |cap_wrd|  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |      |
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3  | GUI   |
 			bindings = <
 	&kp DEL   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                   &kp N6 &kp N7  &kp N8  &kp N9   &kp N0 &kp MINUS
-	&kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
-	&kp LSHFT &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &trans
+	&kp CAPS   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
+	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &trans
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
+			
 			
 		};
 
@@ -87,7 +87,7 @@
 	&trans &trans &trans &trans &trans &trans &trans &tdbt            &trans &trans &trans &trans &trans &trans &trans &trans
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
+			
 			
 		};
 
@@ -103,7 +103,7 @@
 	&trans &trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans  &trans &trans &trans &trans
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
+			
 			
 		};
 
