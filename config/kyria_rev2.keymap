@@ -26,7 +26,7 @@
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
-    mods = <MOD_LSFT | MOD_RSFT>;
+    mods = <LEFT_SHIFT |RIGHT_SHIFT>;
 };
 
 / {
