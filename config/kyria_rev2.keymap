@@ -63,14 +63,14 @@
 		layer_1 {
 				label = "One";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -  |
-// |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +  |
-// |cap_wrd|  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |      |
+// |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -   |
+// |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +   |
+// |cap_wrd|  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |cap_wrd|
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3  | GUI   |
 			bindings = <
 	&kp DEL   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                   &kp N6 &kp N7  &kp N8  &kp N9   &kp N0 &kp MINUS
 	&kp CAPS   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
-	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &trans
+	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &caps_word
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
 			
@@ -80,13 +80,13 @@
 		layer_2 {
 				label = "Two";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                                          |      |       |  UP   |      |       |      |
+// |       |     |  `  |   ~  |      |      |                                          |      |       |  UP   |      |       |      |
 // |       |     |     |      |      |      |                                          |      | LEFT  |  DOWN |RIGHT |       |      |
 // |       |     |     |      |      |      |         |BLUETOOTH|  |         |         |      |       |       |      |       |      |
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
 			bindings = <
-	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                              &kp Y &kp U  &kp UP     &kp O   &kp P    &trans
-	&trans   &trans &trans &trans &trans &trans                               &kp H &kp LEFT  &kp DOWN     &kp RIGHT   &kp SEMI &trans
+	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                              &trans &trans  &kp UP     &trans   &trans    &trans
+	&trans   &trans &trans &trans &trans &trans                               &trans &kp LEFT  &kp DOWN     &kp RIGHT   &trans &trans
 	&trans &trans &trans &trans &trans &trans &trans &tdbt            &trans &trans &trans &trans &trans &trans &trans &trans
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
@@ -97,15 +97,15 @@
 		layer_3 {
 				label = "Three";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                                          | F7   |   F8  |   F9  |  F10 |   F11 | F12  |
-// |       |     |     |      |      |      |                                          |      |       |       |      |       |      |
-// |       |     |     |      |      |      |         |         |  |         |         |      |       |       |      |       |      |
-//                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
+// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                                          |      |    7  |    8  |   9  |    +  |   -  |
+// |  F7   |  F8 |  F9 |  F10 |  F11 |  F12 |                                          |  ,   |    4  |    5  |   6  |    *  |   /  |
+// |       |     |     |      |      |      |         |         |  |         |         |  .   |    1  |    2  |   3  |    =  |      |
+//                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   |    0  |
 			bindings = <
-	&kp F1   &kp F2 &kp F3 &kp F4 &kp F5 &kp F6                                    &kp F7 &kp F8  &kp F9     &kp F10   &kp F11    &kp F12
-	&trans   &trans &trans &trans &trans &trans                                    &trans &trans  &trans     &trans   &trans &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans  &trans &trans &trans &trans
-	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
+	&kp F1   &kp F2 &kp F3 &kp F4 &kp F5 &kp F6                                    &trans     &kp KP_N7  &kp KP_N8   &kp KP_N9   &kp KP_PLUS &kp KP_MINUS
+	&trans   &trans &trans &trans &trans &trans                                    &KP_COMMA  &kp KP_N4  &kp KP_N5   &kp KP_N6   &kp KP_MULTIPLY &kp KP_DIVIDE
+	&trans &trans &trans &trans &trans &trans &trans &trans          &trans &trans &kp KP_DOT &kp KP_N1  &kp KP_N2   &kp KP_N3   &kp KP_EQUAL &trans
+	                 &trans &trans &trans &trans &trans                &trans  &trans  &trans &trans &kp KP_N0
 			>;
 			
 			
