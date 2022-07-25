@@ -82,12 +82,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |     |  `  |   ~  |      |      |                                          |      |       |  UP   |      |       |      |
 // |       |     |     |      |      |      |                                          |      | LEFT  |  DOWN |RIGHT |       |      |
-// |       |     |     |      |      |      |         |BLUETOOTH|  |         |         |      |       |       |      |       |      |
+// |LSHIFT |     |     |      |      |      |         |BLUETOOTH|  |         |         |      |       |       |      |       |RSHIFT|
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
 			bindings = <
 	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                              &trans &trans  &kp UP     &trans   &trans    &trans
 	&trans   &trans &trans &trans &trans &trans                               &trans &kp LEFT  &kp DOWN     &kp RIGHT   &trans &trans
-	&trans &trans &trans &trans &trans &trans &trans &tdbt            &trans &trans &trans &trans &trans &trans &trans &trans
+	&kp LSHIFT &trans &trans &trans &trans &trans &trans &tdbt            &trans &trans &trans &trans &trans &trans &trans &kp RSHIFT
 	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
 			>;
 			
