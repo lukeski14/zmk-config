@@ -66,12 +66,12 @@
 // |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +   |
 // |cap_wrd|  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |cap_wrd|
-//                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3  | GUI   |
+//                     | ALT  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3  | ALT   |
 			bindings = <
 	&kp DEL   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                   &kp N6 &kp N7  &kp N8  &kp N9   &kp N0 &kp MINUS
 	&kp CAPS   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
 	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &caps_word
-	                 &trans &trans &trans &trans &trans          &trans  &trans  &trans &trans &trans
+	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
 			
 			
