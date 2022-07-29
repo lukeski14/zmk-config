@@ -19,14 +19,6 @@
     tapping-term-ms = <200>;
 	quick-tap-ms = <150>;
 };
-&st {
-    retro-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-	quick-tap-ms = <150>;
-	global-quick-tap-ms = <100>;
-};
-
 &lt {
     retro-tap;
     flavor = "tap-preferred";
@@ -46,7 +38,18 @@
             tapping-term-ms = <170>;
             bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 4>, <&bt BT_SEL 5>;
         };
-    };
+		st: shift_tap {
+			compatible = "zmk,behavior-hold-tap";
+            label = "SFT_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <150>;
+			retro-tap;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            global-quick-tap-ms = <100>;
+		};
+	};
 
 
 	keymap {
