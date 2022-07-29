@@ -42,8 +42,8 @@
 			compatible = "zmk,behavior-hold-tap";
             label = "SFT_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <100>;
+            quick-tap-ms = <75>;
 			retro-tap;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
