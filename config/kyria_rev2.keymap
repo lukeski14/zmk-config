@@ -17,7 +17,16 @@
     retro-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
+	quick-tap-ms = <150>;
 };
+&st {
+    retro-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
+	quick-tap-ms = <150>;
+	global-quick-tap-ms = <100>;
+};
+
 &lt {
     retro-tap;
     flavor = "tap-preferred";
@@ -53,7 +62,7 @@
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A &mt LALT S &kp D &mt LCTRL F &kp G                                &kp H &mt RCTRL J  &kp K  &mt RALT L &kp SEMI &kp SQT
-	&mt LSHIFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHIFT RPAR
+	&st LSHIFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &st RSHIFT RPAR
 	                 &kp LGUI &mo THREE &mo TWO &kp BSPC &kp DEL        &kp RET  &lt ONE SPACE  &mo TWO &mo THREE &kp RGUI
 			>;
 			
