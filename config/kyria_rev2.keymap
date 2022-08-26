@@ -97,9 +97,9 @@
 // |LSHIFT |     |     |      |      |      |         |BLUETOOTH|  |         |         |      |       |       |      |       |RSHIFT|
 //                     | ALT  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
 			bindings = <
-	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                              &trans &trans  &kp UP     &trans   &trans    &trans
+	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                            &trans &trans  &kp UP     &trans   &trans    &trans
 	&trans   &trans &trans &trans &kp SPACE &trans                               &trans &kp LEFT  &kp DOWN     &kp RIGHT   &trans &trans
-	&kp LSHIFT &trans &trans &trans &trans &trans &trans &tdbt            &trans &trans &trans &trans &trans &trans &trans &kp RSHIFT
+	&kp LSHIFT &trans &trans &trans &trans &trans &trans &tdbt        &kp BT_CLR &trans &trans &trans &trans &trans &trans &kp RSHIFT
 	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
 			
