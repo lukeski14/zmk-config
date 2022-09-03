@@ -59,7 +59,7 @@
 				label = "Default";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |LA(S)|  D   | LC(F)|  G   |                                          |  H   |LC(J)  |  K    |RA(L) |   ;   |   '  |
+// |  TAB  |  A  |LA(S)|  D   | LC(F)|  G   |                                          |  H   |RC(J)  |  K    |RA(L) |   ;   |   '  |
 // | CADET |  Z  |  X  |  C   |  V   |  B   |         |LT(HOME) |  |   END   |         |  N   |  M    |  ,    |  .   |   /   | CADET|
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
 			bindings = <
@@ -78,10 +78,10 @@
 // |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +   |
 // |cap_wrd|  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |cap_wrd|
-//                     | ALT  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3  | ALT   |
+//                     | ALT  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
 			bindings = <
 	&kp DEL   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                   &kp N6 &kp N7  &kp N8  &kp N9   &kp N0 &kp MINUS
-	&kp CAPS   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
+	&kp CAPS   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                   &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
 	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &caps_word
 	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
@@ -92,14 +92,14 @@
 		layer_2 {
 				label = "Two";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |     |  `  |   ~  |      |      |                                          |      |       |  UP   |      |       |      |
-// |       |     |     |      |SPACE |      |                                          |      | LEFT  |  DOWN |RIGHT |       |      |
-// |LSHIFT |     |     |      |      |      |         |BLUETOOTH|  |   BT CLR|         |      |       |       |      |       |RSHIFT|
-//                     | ALT  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
+// |       |     |  `  |   ~  |      |      |                                          |      |  PG UP|  UP   | PG DN|       |      |
+// |       |LC(A)|LC(S)|      |SPACE |      |                                          | HOME | LEFT  |  DOWN |RIGHT |   END |      |
+// |LSHIFT |LC(Z)|LC(X)|LC(C) |LC(V) |      |         |BLUETOOTH|  |   BT CLR|         |      |  INS  |       |C(INS)|S(INS) |RSHIFT|
+//                     | ALT  |  MO3 | MO2  |         |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
 			bindings = <
-	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                            &trans &trans  &kp UP     &trans   &trans    &trans
-	&trans   &trans &trans &trans &kp SPACE &trans                               &trans &kp LEFT  &kp DOWN     &kp RIGHT   &trans &trans
-	&kp LSHIFT &trans &trans &trans &trans &trans &trans &tdbt        &bt BT_CLR &trans &trans &trans &trans &trans &trans &kp RSHIFT
+	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                            &trans &kp PG_UP    &kp UP      &kp PG_DN   &trans    &trans
+	&trans   &kp LC(A) &kp LC(S) &trans &kp SPACE &trans                               &kp HOME &kp LEFT  &kp DOWN    &kp RIGHT   &kp END &trans
+	&kp LSHIFT &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &trans &trans &tdbt        &bt BT_CLR &trans &trans &kp INS &trans &kp LC(INS) &kp LS(INS) &kp RSHIFT
 	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
 			
