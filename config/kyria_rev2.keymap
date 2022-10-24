@@ -93,12 +93,12 @@
 				label = "Two";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |     |  `  |   ~  |      |      |                                          |      |  PG UP|  UP   | PG DN|       |      |
-// |       |LC(A)|LC(S)|      |SPACE |      |                                          | HOME | LEFT  |  DOWN |RIGHT |   END |      |
+// |ALT TAB|LC(A)|LC(S)|      |SPACE |      |                                          | HOME | LEFT  |  DOWN |RIGHT |   END |      |
 // |LSHIFT |LC(Z)|LC(X)|LC(C) |LC(V) |      |         |BLUETOOTH|  |   BT CLR|         |      |  INS  |       |C(INS)|S(INS) |RSHIFT|
 //                     | ALT  |  MO3 | MO2  |         |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
 			bindings = <
 	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                            &trans &kp PG_UP    &kp UP      &kp PG_DN   &trans    &trans
-	&trans   &kp LC(A) &kp LC(S) &trans &kp SPACE &trans                               &kp HOME &kp LEFT  &kp DOWN    &kp RIGHT   &kp END &trans
+	&kp LA(TAB) &kp LC(A) &kp LC(S) &trans &kp SPACE &trans                               &kp HOME &kp LEFT  &kp DOWN    &kp RIGHT   &kp END &trans
 	&kp LSHIFT &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &trans &trans &tdbt        &bt BT_CLR &trans &trans &kp INS &trans &kp LC(INS) &kp LS(INS) &kp RSHIFT
 	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
