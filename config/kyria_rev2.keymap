@@ -60,12 +60,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  TAB  |  A  |LA(S)|  D   | LC(F)|  G   |                                          |  H   |RC(J)  |  K    |RA(L) |   ;   |   '  |
-// | CADET |  Z  |  X  |  C   |  V   |  B   |         |LT(HOME) |  |   END   |         |  N   |  M    |  ,    |  .   |   /   | CADET|
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |         |LT(HOME) |  |   END   |         |  N   |  M    |  ,    |  .   |   /   | SHIFT|
 //                     | GUI  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | GUI   |
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A &mt LALT S &kp D &mt LCTRL F &kp G                                &kp H &mt RCTRL J  &kp K  &mt RALT L &kp SEMI &kp SQT
-	&st LSHIFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &lt ONE HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &st RSHIFT RPAR
+	&kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &lt ONE HOME        &kp END &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
 	                 &kp LGUI &mo THREE &mo TWO &kp BSPC &kp DEL        &kp RET  &lt ONE SPACE  &mo TWO &mo THREE &kp RGUI
 			>;
 			
@@ -77,12 +77,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  DEL  |  1  |  2  |  3   |  4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  CAPS |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |  &    |  *    |  =   |       |   +   |
-// |cap_wrd|  _  |     |  [   |  {   |      |         | PG UP   |  | PG DN   |         |      |  }    |  ]    |      |       |cap_wrd|
+// |cap_wrd|  _  |     |  [   |  {   |  (   |         | PG UP   |  | PG DN   |         |  )   |  }    |  ]    |      |       |cap_wrd|
 //                     | ALT  |  MO3 | MO2  |   BSPC  |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
 			bindings = <
 	&kp DEL   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                   &kp N6 &kp N7  &kp N8  &kp N9   &kp N0 &kp MINUS
 	&kp CAPS   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                   &kp CARET &kp AMPS  &kp STAR   &kp EQUAL   &trans &kp PLUS
-	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &trans &trans &kp PG_UP &kp PG_DN &trans &trans &kp RBRC  &kp RBKT &trans &trans &caps_word
+	&caps_word &kp UNDER &trans &kp LBKT &kp LBRC &kp LPAR &trans &kp PG_UP &kp PG_DN &trans &kp RPAR &kp RBRC  &kp RBKT &trans &trans &caps_word
 	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
 			
@@ -93,13 +93,13 @@
 				label = "Two";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |     |  `  |   ~  |      |      |                                          |      |  PG UP|  UP   | PG DN|       |      |
-// |ALT TAB|LC(A)|LC(S)|      |SPACE |      |                                          | HOME | LEFT  |  DOWN |RIGHT |   END |      |
-// |LSHIFT |LC(Z)|LC(X)|LC(C) |LC(V) |      |         |BLUETOOTH|  |   BT CLR|         |      |  INS  |       |C(INS)|S(INS) |RSHIFT|
+// |  TAB  |LC(A)|LC(S)|      |SPACE |      |                                          | HOME | LEFT  |  DOWN |RIGHT |   END |      |
+// |   (   |LC(Z)|LC(X)|LC(C) |LC(V) |      |         |BLUETOOTH|  |   BT CLR|         |      |  INS  |       |C(INS)|S(INS) |   )  |
 //                     | ALT  |  MO3 | MO2  |         |   DEL   |  |   RET   |LT(SPACE)| MO2  | MO3   | ALT   |
 			bindings = <
 	&trans   &trans &kp GRAVE &kp TILDE &trans &trans                            &trans &kp PG_UP    &kp UP      &kp PG_DN   &trans    &trans
-	&kp LA(TAB) &kp LC(A) &kp LC(S) &trans &kp SPACE &trans                               &kp HOME &kp LEFT  &kp DOWN    &kp RIGHT   &kp END &trans
-	&kp LSHIFT &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &trans &trans &tdbt        &bt BT_CLR &trans &trans &kp INS &trans &kp LC(INS) &kp LS(INS) &kp RSHIFT
+	&kp TAB &kp LC(A) &kp LC(S) &trans &kp SPACE &trans                               &kp HOME &kp LEFT  &kp DOWN    &kp RIGHT   &kp END &trans
+	&kp LPAR &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &trans &trans &tdbt        &bt BT_CLR &trans &trans &kp INS &trans &kp LC(INS) &kp LS(INS) &kp RPAR
 	                 &kp LALT &trans &trans &trans &trans          &trans  &trans  &trans &trans &kp RALT
 			>;
 			
